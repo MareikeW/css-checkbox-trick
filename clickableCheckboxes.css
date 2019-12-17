@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 400px;
+  height: 400px;
+  border: 1px solid;
+  /* centers container */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* makes checkboxes disappear */
+#btnControl1 {
+  display: none;
+}
+
+#btnControl2 {
+  display: none;
+}
+
+#btnControl3 {
+  display: none;
+}
+
+#btnControl4 {
+  display: none;
+}
+
+
+/* styles boxes (buttons) */
+.btn {
+  width: 200px;
+  height: 200px;
+  background-color: #F0FFFF;
+  display: block;
+  border: 1px solid;
+}
+
+/* changes box (button) color when clicked on */
+#btnControl1:checked + label {
+    background-color: yellow;
+}
+
+#btnControl2:checked + label {
+    background-color: yellow;
+}
+
+#btnControl3:checked + label {
+    background-color: yellow;
+}
+
+#btnControl4:checked + label {
+    background-color: yellow;
+}
